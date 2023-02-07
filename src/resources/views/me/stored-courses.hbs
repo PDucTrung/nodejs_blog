@@ -28,17 +28,21 @@
   <table class="table mt-4">
     <thead>
       <tr>
-        <th scope="col" colspan="2">#</th>
+        <th scope="col" ></th>
+        <th scope="col">
+          ID &nbsp;
+          {{{sortable '_id' _sort}}}
+        </th>
         <th scope="col" class="d-flex align-items-center">
-          Tên khóa học 
+          Tên khóa học &nbsp;
           {{{sortable 'name' _sort}}}
         </th>
         <th scope="col">
-          Trình độ
+          Trình độ &nbsp;
           {{{sortable 'level' _sort}}}
         </th>
         <th scope="col" colspan="2">
-          Thời gian tạo
+          Thời gian tạo &nbsp;
           {{{sortable 'createdAt' _sort}}}
         </th>
       </tr>
@@ -56,7 +60,7 @@
               />
             </div>
           </td>
-          <th scope="row">{{sum @index 1}}</th>
+          <th scope="row">{{this._id}}</th>
           <td>{{this.name}}</td>
           <td>{{this.level}}</td>
           <td>{{this.createdAt}}</td>
